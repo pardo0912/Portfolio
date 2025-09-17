@@ -105,8 +105,8 @@ Beyond my technical expertise, I bring strong **administrative and management sk
 ---
 
 ## 🌍 Languages  
-- 🇺🇸 **English (B2):** Upper-intermediate, business & technical fluency  
-- 🇨🇴 **Spanish:** Native  
+- **English (B2):** Upper-intermediate, business & technical fluency  
+- **Spanish:** Native  
 
 ---
 
