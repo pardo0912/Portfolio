@@ -2,7 +2,8 @@
 ## 📫 Let’s Connect  
 
 <p align="center">
-  <a href="mailto:vanepardo912@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-lightgrey?style=flat&logo=gmail&logoColor=red"></a>
+  📧 vanepardo912@gmail.com  
+  <br>
   <a href="https://linkedin.com/in/windy-vanesa-pardo"><img src="https://img.shields.io/badge/LinkedIn-Profile-lightgrey?style=flat&logo=linkedin&logoColor=blue"></a>
   <a href="https://pardo0912.github.io/Portfolio/"><img src="https://img.shields.io/badge/Portfolio-Live-lightgrey?style=flat&logo=github"></a>
 </p>
