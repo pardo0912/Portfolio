@@ -1,5 +1,5 @@
 title: Windy Pardo
 logo: img/Fotografia Windy Pardo.jpg
 #description: text below image
-show_downloads: true
-theme : jekyll-theme-cayman
+#show_downloads: true
+theme : jekyll-theme-minimal
