@@ -35,14 +35,16 @@ Passionate about continuous improvement, change management, and bridging technic
 
 ## 🏢 Administrative & Management Skills  
 
-- Business Process Analysis & Optimization – improving workflows and reducing inefficiencies  
-- Project Management (Agile & Waterfall) – planning, execution, monitoring, and reporting  
-- Stakeholder Management & Communication – aligning technical and business teams  
-- Team Training & Adoption – leading workshops and achieving high digital adoption rates  
-- Risk & Compliance Reporting – ensuring data accuracy and compliance with standards  
-- Change Management – facilitating transitions to new digital tools and processes  
-- KPI Design & Monitoring – enabling data-driven decision-making  
-- Time & Resource Management – optimizing task allocation and productivity  
+<p align="center">
+  <img src="https://img.shields.io/badge/Business%20Process%20Analysis-4CAF50?style=flat&logo=processwire&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Project%20Management%20(Agile%20%26%20Waterfall)-007ACC?style=flat&logo=trello&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Stakeholder%20Management-FF9800?style=flat&logo=handshake&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Team%20Training%20%26%20Adoption-9C27B0?style=flat&logo=teamspeak&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Risk%20%26%20Compliance%20Reporting-795548?style=flat&logo=trustpilot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Change%20Management-03A9F4?style=flat&logo=autodesk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/KPI%20Design%20%26%20Monitoring-673AB7?style=flat&logo=googleanalytics&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Time%20%26%20Resource%20Management-8BC34A?style=flat&logo=clockify&logoColor=white"/>
+</p>
 
 ---
 
