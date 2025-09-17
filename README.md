@@ -86,5 +86,5 @@ Recognized for:
 
 ---
 
-## ✨ Motto
+✨
 _“Turning data into solutions that drive business impact and digital innovation.”_
