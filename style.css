@@ -1,3 +1,4 @@
+/* General */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -48,6 +49,7 @@ section {
   color: #333;
 }
 
+/* Buttons */
 .buttons {
   margin-bottom: 40px; /* espacio entre botones y What I Do */
 }
@@ -68,6 +70,26 @@ section {
 .buttons .btn.green:hover { background: #1e7e34; }
 .buttons .btn.orange { background: #ff6600; }
 .buttons .btn.orange:hover { background: #cc5200; }
+
+/* Frase de inicio impactante */
+.impact-phrase {
+  font-size: 3rem; /* letra más grande */
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #0066cc, #28a745, #ff6600, #ff1493, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 /* What I Do - fila horizontal */
 .what-i-do h2 {
@@ -151,7 +173,7 @@ section {
   color: #0066cc;
   border: 2px solid #0066cc;
   background: transparent;
-  transition: transform 0.2s, background 0.3s;
+  transition: transform 0.2s, background 0.3s, color 0.3s;
 }
 
 .skill i {
@@ -177,4 +199,5 @@ section {
   .hero-text, .hero-image { max-width: 100%; }
   .cards-row { flex-direction: column; }
   .card { flex: 1 1 100%; }
+  .impact-phrase { font-size: 2rem; }
 }
