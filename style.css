@@ -23,35 +23,10 @@ section {
   gap: 25px;
 }
 
-.impact-phrase {
-  font-size: 2.6rem;
-  font-weight: 700;
-  font-family: "Oswald", sans-serif;
-  line-height: 1.2;
-  margin-bottom: 15px;
-  background: linear-gradient(90deg, #0066cc, #28a745, #ff6600);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient-flow 5s ease infinite;
-  background-size: 200% 200%;
-}
-
-@keyframes gradient-flow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 .hero-text {
   flex: 1;
   min-width: 300px;
   max-width: 55%;
-}
-
-.hero-text .subtitle {
-  font-size: 1.1rem;
-  color: #555;
-  margin: 15px 0;
 }
 
 .hero-image {
@@ -73,6 +48,10 @@ section {
   color: #333;
 }
 
+.buttons {
+  margin-bottom: 40px; /* espacio entre botones y What I Do */
+}
+
 .buttons .btn {
   display: inline-block;
   margin: 5px;
@@ -90,34 +69,32 @@ section {
 .buttons .btn.orange { background: #ff6600; }
 .buttons .btn.orange:hover { background: #cc5200; }
 
-/* What I Do - moderno con grid y bullets */
-#what-i-do {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#what-i-do h2 {
+/* What I Do - fila horizontal */
+.what-i-do h2 {
   font-size: 2.2rem;
-  margin-bottom: 30px;
   color: #0066cc;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.cards-row {
+  display: flex;
   gap: 20px;
-  justify-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
+  flex: 1 1 calc(25% - 15px);
   background: #fff;
   border: 2px solid #0066cc;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s, background 0.3s, color 0.3s;
-  cursor: default;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  cursor: default;
+  min-width: 200px;
 }
 
 .card i {
@@ -155,7 +132,7 @@ section {
   color: #fff;
 }
 
-/* Skills compacto + color único */
+/* Skills - solo borde azul */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -171,9 +148,9 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  background: #0066cc;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  color: #0066cc;
+  border: 2px solid #0066cc;
+  background: transparent;
   transition: transform 0.2s, background 0.3s;
 }
 
@@ -185,22 +162,19 @@ section {
 
 .skill:hover {
   transform: translateY(-5px);
-  background: #004a99;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background: #333;
-  color: white;
-  padding: 15px;
-  margin-top: 30px;
+  background: #0066cc;
+  color: #fff;
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .cards-row { flex-wrap: wrap; gap: 15px; }
+  .card { flex: 1 1 calc(50% - 15px); }
+}
+
 @media (max-width: 768px) {
-  #hero { flex-direction: column; align-items: center; text-align: center; }
+  #hero { flex-direction: column; text-align: center; }
   .hero-text, .hero-image { max-width: 100%; }
-  .impact-phrase { font-size: 1.9rem; }
-  .cards-grid { grid-template-columns: 1fr; }
+  .cards-row { flex-direction: column; }
+  .card { flex: 1 1 100%; }
 }
