@@ -28,6 +28,18 @@ section {
   max-width: 55%;
 }
 
+.hero-text h1 {
+  font-size: 2rem;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.hero-text .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
 .hero-image {
   flex: 0.8;
   min-width: 250px;
@@ -42,7 +54,7 @@ section {
 }
 
 .hero-image .name {
-  margin: 15px 0 5px;
+  margin: 10px 0 5px;
   font-size: 1.5rem;
   color: #333;
 }
@@ -80,21 +92,29 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
   margin-top: 20px;
 }
 
-.skills-grid span {
+.skill {
   background: #eaf0f6;
-  padding: 10px;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: bold;
-  transition: transform 0.2s;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: left;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s, background 0.3s;
 }
 
-.skills-grid span:hover {
+.skill i {
+  font-size: 1.2rem;
+  color: #0066cc;
+}
+
+.skill:hover {
   transform: scale(1.05);
   background: #d9e6f2;
 }
@@ -113,4 +133,17 @@ footer {
   color: white;
   padding: 20px;
   margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    max-width: 100%;
+  }
 }
