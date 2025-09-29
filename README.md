@@ -1,8 +1,3 @@
-<!-- Hero / Encabezado -->
-<p align="center">
-  <img src="https://via.placeholder.com/200" alt="Windy Pardo" width="200" style="border-radius:50%">
-</p>
-
 <h1 align="center">👋 Hi, I'm Windy Pardo</h1>
 <h3 align="center">Data & Systems Analyst | Digital Transformation | Project & Business Management</h3>
 
