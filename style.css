@@ -94,8 +94,8 @@ section {
 .buttons .btn.orange:hover { background: #cc5200; }
 
 /* What I Do */
-.what-i-do ul { list-style: none; padding: 0; margin: 10px 0; }
-.what-i-do li { margin: 4px 0; }
+.what-i-do ul { list-style: none; padding: 0; margin: 15px 0; }
+.what-i-do li { margin: 10px 0; font-size: 1rem; line-height: 1.5; }
 
 /* Skills */
 .skills-grid {
