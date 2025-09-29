@@ -90,74 +90,77 @@ section {
 .buttons .btn.orange { background: #ff6600; }
 .buttons .btn.orange:hover { background: #cc5200; }
 
-/* What I Do cards */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+/* What I Do vertical cards */
+.cards-vertical {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   margin-top: 20px;
 }
 
-.card {
+.card-vertical {
+  display: flex;
+  align-items: flex-start;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
-.card i {
+.card-vertical i {
   font-size: 2rem;
   color: #0066cc;
-  margin-bottom: 10px;
+  margin-right: 15px;
 }
 
-.card h3 {
-  margin: 10px 0;
+.card-content h3 {
+  margin: 0 0 8px;
   color: #333;
 }
 
-.card p {
+.card-content p {
   font-size: 0.95rem;
   color: #555;
+  margin: 0;
 }
 
-.card:hover { transform: translateY(-8px); }
+.card-vertical:hover {
+  transform: translateY(-6px);
+}
 
-/* Skills */
+/* Skills compact + single color */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
   margin-top: 15px;
 }
 
 .skill {
-  padding: 15px;
-  border-radius: 12px;
+  padding: 12px;
+  border-radius: 10px;
   text-align: center;
   font-weight: 600;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  background: #0066cc; /* Solo azul */
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s, background 0.3s;
 }
 
 .skill i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 6px;
   display: block;
 }
 
-/* Colores consistentes con botones */
-.skill:nth-child(3n+1) { background: #0066cc; }
-.skill:nth-child(3n+2) { background: #28a745; }
-.skill:nth-child(3n)   { background: #ff6600; }
-
-.skill:hover { transform: translateY(-5px); }
+.skill:hover {
+  transform: translateY(-5px);
+  background: #004a99;
+}
 
 /* Experience */
 .exp-card {
