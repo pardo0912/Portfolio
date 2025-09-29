@@ -12,13 +12,14 @@ section {
   margin: auto;
 }
 
+/* Hero */
 #hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   background: linear-gradient(to bottom, #e8f0ff, #ffffff);
-  padding: 80px 20px;
+  padding: 60px 20px;
   gap: 40px;
 }
 
@@ -61,7 +62,7 @@ section {
 
 .buttons .btn {
   display: inline-block;
-  margin: 10px;
+  margin: 8px;
   padding: 10px 20px;
   background: #0066cc;
   color: white;
@@ -90,43 +91,97 @@ section {
   background: #cc5200;
 }
 
+/* What I Do integrado */
+.what-i-do {
+  margin-top: 40px;
+}
+.what-i-do ul {
+  list-style: none;
+  padding: 0;
+}
+.what-i-do li {
+  margin: 6px 0;
+}
+
+/* Skills */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
 
 .skill {
-  background: #eaf0f6;
-  padding: 12px;
-  border-radius: 8px;
-  text-align: left;
-  font-weight: 500;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  background: #f5f8fc;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s, background 0.3s;
 }
 
 .skill i {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #0066cc;
+  margin-bottom: 8px;
 }
 
 .skill:hover {
-  transform: scale(1.05);
-  background: #d9e6f2;
+  transform: translateY(-5px);
+  background: #e0edff;
 }
 
+/* Experience */
+.exp-card {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 5px solid #0066cc;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+}
+
+.exp-card h3 {
+  margin: 0 0 10px;
+}
+
+.exp-card .date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Education */
+.edu-timeline {
+  border-left: 3px solid #0066cc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.edu-item {
+  margin: 15px 0;
+}
+
+.edu-item .year {
+  font-weight: bold;
+  color: #0066cc;
+  margin-right: 10px;
+}
+
+/* Projects */
 .project {
   background: #f9f9f9;
   padding: 20px;
   margin: 15px 0;
   border-left: 5px solid #0066cc;
   border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
 }
 
+/* Footer */
 footer {
   text-align: center;
   background: #333;
@@ -142,7 +197,6 @@ footer {
     align-items: center;
     text-align: center;
   }
-
   .hero-text, .hero-image {
     max-width: 100%;
   }
