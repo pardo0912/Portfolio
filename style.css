@@ -49,15 +49,17 @@ section {
   color: #333;
 }
 
-/* Buttons */
+/* Hero Buttons */
 .buttons {
-  margin-bottom: 60px;
+  margin-top: 25px;  /* espacio entre subtítulo y botones */
+  margin-bottom: 60px; /* espacio entre botones y What I Do */
 }
 
 .buttons .btn {
   display: inline-block;
-  margin: 5px;
-  padding: 10px 20px;
+  margin: 8px 10px;       /* más separación */
+  padding: 14px 28px;     /* botones más grandes */
+  font-size: 1rem;        /* texto más grande */
   background: #0066cc;
   color: white;
   text-decoration: none;
@@ -83,6 +85,14 @@ section {
   -webkit-text-fill-color: transparent;
   animation: gradient-flow 5s ease infinite;
   background-size: 200% 200%;
+}
+
+.hero-text .subtitle {
+  font-size: 1.3rem;   /* subtítulo más grande */
+  font-weight: 500;
+  margin: 20px 0;
+  line-height: 1.4;
+  color: #555;
 }
 
 @keyframes gradient-flow {
@@ -276,4 +286,6 @@ footer {
   .cards-row { flex-direction: column; }
   .card { flex: 1 1 100%; }
   .impact-phrase { font-size: 2rem; }
+  .hero-text .subtitle { font-size: 1.2rem; }
+  .buttons .btn { padding: 12px 24px; font-size: 0.95rem; }
 }
