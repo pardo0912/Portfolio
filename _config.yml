@@ -1,8 +1,14 @@
 title: Windy Pardo
 logo: /img/Fotografia Windy Pardo.jpg
 description: >
-  📍 Bogotá, Colombia  
-  📧 vanepardo912@gmail.com  
-  🔗 [LinkedIn](https://linkedin.com/in/windy-vanesa-pardo) | 
-  🔗 [Portfolio](https://pardo0912.github.io/Portfolio/)
+  <p align="center">
+    📍 Bogotá, Colombia
+  </p>
+  <p align="center">
+    📧 <b>vanepardo912@gmail.com</b>
+  </p>
+  <p align="center">
+    🔗 <a href="https://linkedin.com/in/windy-vanesa-pardo" target="_blank">LinkedIn</a> |
+    <a href="https://pardo0912.github.io/Portfolio/" target="_blank">Portfolio</a>
+  </p>
 theme: jekyll-theme-minimal
