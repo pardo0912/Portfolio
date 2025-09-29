@@ -26,10 +26,20 @@ section {
 .impact-phrase {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #004a99;
   font-family: "Oswald", sans-serif;
   line-height: 1.2;
   margin-bottom: 15px;
+  background: linear-gradient(90deg, #0066cc, #28a745, #ff6600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero-text {
@@ -108,23 +118,17 @@ section {
   transition: transform 0.2s, background 0.3s;
 }
 
+/* Solo 3 colores en bucle */
+.skill:nth-child(3n+1) { background: #0066cc; } /* Azul */
+.skill:nth-child(3n+2) { background: #28a745; } /* Verde */
+.skill:nth-child(3n)   { background: #ff6600; } /* Naranja */
+
 .skill i {
   font-size: 1.8rem;
   margin-bottom: 6px;
 }
 
 .skill:hover { transform: translateY(-5px); }
-
-/* Skill colors */
-.blue { background: #007bff; }
-.green { background: #28a745; }
-.orange { background: #ff6600; }
-.purple { background: #6f42c1; }
-.yellow { background: #f2c811; color: #333; }
-.red { background: #dc3545; }
-.teal { background: #20c997; }
-.pink { background: #e83e8c; }
-.navy { background: #004085; }
 
 /* Experience */
 .exp-card {
