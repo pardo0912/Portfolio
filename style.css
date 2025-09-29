@@ -7,7 +7,7 @@ body {
 }
 
 section {
-  padding: 60px 20px;
+  padding: 40px 20px; /* menos espacio */
   max-width: 1100px;
   margin: auto;
 }
@@ -19,8 +19,16 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   background: linear-gradient(to bottom, #e8f0ff, #ffffff);
-  padding: 60px 20px;
-  gap: 40px;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.impact-phrase {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #004a99;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
 }
 
 .hero-text {
@@ -29,16 +37,10 @@ section {
   max-width: 55%;
 }
 
-.hero-text h1 {
-  font-size: 2rem;
-  color: #0066cc;
-  margin-bottom: 1rem;
-}
-
 .hero-text .subtitle {
   font-size: 1.1rem;
   color: #555;
-  margin-bottom: 1.5rem;
+  margin: 15px 0;
 }
 
 .hero-image {
@@ -62,7 +64,7 @@ section {
 
 .buttons .btn {
   display: inline-block;
-  margin: 8px;
+  margin: 5px;
   padding: 10px 20px;
   background: #0066cc;
   color: white;
@@ -75,110 +77,85 @@ section {
   background: #004a99;
 }
 
-.buttons .btn.green {
-  background: #28a745;
-}
+.buttons .btn.green { background: #28a745; }
+.buttons .btn.green:hover { background: #1e7e34; }
+.buttons .btn.orange { background: #ff6600; }
+.buttons .btn.orange:hover { background: #cc5200; }
 
-.buttons .btn.green:hover {
-  background: #1e7e34;
-}
-
-.buttons .btn.orange {
-  background: #ff6600;
-}
-
-.buttons .btn.orange:hover {
-  background: #cc5200;
-}
-
-/* What I Do integrado */
-.what-i-do {
-  margin-top: 40px;
-}
-.what-i-do ul {
-  list-style: none;
-  padding: 0;
-}
-.what-i-do li {
-  margin: 6px 0;
-}
+/* What I Do */
+.what-i-do ul { list-style: none; padding: 0; margin: 10px 0; }
+.what-i-do li { margin: 4px 0; }
 
 /* Skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
+  gap: 12px;
+  margin-top: 15px;
 }
 
 .skill {
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
   font-weight: 600;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f5f8fc;
+  color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s, background 0.3s;
 }
 
 .skill i {
   font-size: 1.8rem;
-  color: #0066cc;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-.skill:hover {
-  transform: translateY(-5px);
-  background: #e0edff;
-}
+.skill:hover { transform: translateY(-5px); }
+
+/* Skill colors */
+.blue { background: #007bff; }
+.green { background: #28a745; }
+.orange { background: #ff6600; }
+.purple { background: #6f42c1; }
+.yellow { background: #f2c811; color: #333; }
+.red { background: #dc3545; }
+.teal { background: #20c997; }
+.pink { background: #e83e8c; }
+.navy { background: #004085; }
 
 /* Experience */
 .exp-card {
   background: #f9f9f9;
-  padding: 20px;
-  margin: 15px 0;
+  padding: 15px;
+  margin: 10px 0;
   border-left: 5px solid #0066cc;
   border-radius: 6px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
 }
 
-.exp-card h3 {
-  margin: 0 0 10px;
-}
-
-.exp-card .date {
-  font-size: 0.9rem;
-  color: #777;
-}
+.exp-card h3 { margin: 0 0 8px; }
+.exp-card .date { font-size: 0.9rem; color: #777; }
 
 /* Education */
-.edu-timeline {
-  border-left: 3px solid #0066cc;
-  margin-left: 20px;
-  padding-left: 20px;
+.edu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.edu-item {
-  margin: 15px 0;
-}
-
-.edu-item .year {
-  font-weight: bold;
-  color: #0066cc;
-  margin-right: 10px;
+.edu-list li {
+  margin: 6px 0;
+  font-size: 1rem;
 }
 
 /* Projects */
 .project {
   background: #f9f9f9;
-  padding: 20px;
-  margin: 15px 0;
+  padding: 15px;
+  margin: 10px 0;
   border-left: 5px solid #0066cc;
   border-radius: 6px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
 }
 
 /* Footer */
@@ -186,18 +163,13 @@ footer {
   text-align: center;
   background: #333;
   color: white;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 15px;
+  margin-top: 30px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  #hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-text, .hero-image {
-    max-width: 100%;
-  }
+  #hero { flex-direction: column; align-items: center; text-align: center; }
+  .hero-text, .hero-image { max-width: 100%; }
+  .impact-phrase { font-size: 1.8rem; }
 }
